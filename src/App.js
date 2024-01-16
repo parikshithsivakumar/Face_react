@@ -25,14 +25,6 @@ function App() {
       </Routes>
     </Router> 
     <div>
-            <div
-                style={{
-                    minHeight: "400px",
-                    color: "green",
-                }}
-            >
-                <h1>GeeksforGeeks</h1>
-            </div>
             <Footer />
         </div>
     </div>
