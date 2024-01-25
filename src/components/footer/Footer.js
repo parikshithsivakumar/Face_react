@@ -13,8 +13,6 @@ import { FaTwitter,FaFacebook,FaInstagram } from "react-icons/fa";
 
 
 
-
-
 const Footer = () => {
 	return (
 		<Box>

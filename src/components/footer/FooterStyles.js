@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
 	padding: 5% 2.5%;
-	background: #1D1919;
+	background: #0d1717;
     font-family:  "Poppins" , "serif" , Times New Roman, Times;
 
 	// position: absolute;

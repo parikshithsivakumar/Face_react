@@ -46,9 +46,9 @@ const Navbar = () => {
               <NavLink to="/events">Events</NavLink>
             </li>
             <li >  
-            <NavBtnLink> <Link type="button" to="/signup">
+            <NavBtnLink type="button" to="/signup"> 
              Sign In
-          </Link></NavBtnLink>
+          </NavBtnLink>
            
             </li>
           </ul>

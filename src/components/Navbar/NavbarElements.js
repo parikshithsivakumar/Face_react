@@ -52,7 +52,7 @@ width: 100vw; */
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #1D1919;
+  background: transparent;
   height:100%;
   padding: 10px 22px;
   color: #fff;
@@ -66,8 +66,8 @@ export const NavBtnLink = styled(Link)`
   margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #FFCE76;
-    color: #5aefe7;
+    background: #5aefe7;
+    color: #101720;
     
 
 
@@ -75,7 +75,7 @@ export const NavBtnLink = styled(Link)`
   @media screen and (max-width: 768px) {
     width:fit-content;
   
-    background: #FFCE76;
+    background: #101720;
 
 
   }

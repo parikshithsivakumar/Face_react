@@ -12,14 +12,16 @@
   overflow: hidden; /* Ensure the description is initially hidden */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .back{
-  background-color: #94abbd;
+  background-color: #101720;
 }
+
 .team-card:hover {
   height: fit-content;
   transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
   transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #5aefe7;
 }
 
 .team-card-image {
