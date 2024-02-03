@@ -2,20 +2,25 @@
 
 .main-page-container {
     font-family: 'Arial', sans-serif;
-    background-color: #f3f3f3;
-    color: #101720;
+    background-color: #101720;
+    max-width: 100%;
   }
-  
   
   main {
     max-width: 1200px;
     margin: 0 auto;
+    color: #fcfcfc;
   }
   
   .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 60vh;
+    background-size:100%; /* Adjust the height as needed */
+    background-image: url('/src/static/imgs/cyberbg.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 80px 20px;
   }
   
@@ -50,12 +55,25 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    padding-right: 3rem;
+    margin-right: 3rem;
   }
   
   .about-section {
+    display: flex;
     padding: 50px 20px;
   }
   
+  .about-section img{
+    margin-right: 4rem;
+    padding: 50px 20px;
+  }
+  
+
+
+
+
+
   .about-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
