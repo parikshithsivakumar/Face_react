@@ -1,0 +1,52 @@
+/* SimpleCarousel.css */
+.carousel-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 9 / 16 * 100 = 56.25% for 16:9 aspect ratio */
+    object-fit: cover;
+  }
+  
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80%;
+  }
+  
+  .slide-content h3 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect to the text */
+    margin-bottom: 10px;
+  }
+  
+  .slide-content p {
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect to the text */
+  }
+  
+  .slick-dots {
+    bottom: 20px;
+  }
+  
+  .slick-dots li button {
+    font-size: 12px;
+    color: #bbb;
+    padding: 5px;
+  }
+  
+  .slick-dots li.slick-active button {
+    color: #3498db;
+  }
+  

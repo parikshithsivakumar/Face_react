@@ -5,7 +5,8 @@ import './index.css';
 import image from '../static/imgs/hero-img.jpg';
 import Tilt from "react-parallax-tilt";
 import { TypeAnimation } from 'react-type-animation';
-
+// import SilderCarousel from "../components/carousel/carousel";
+import SimpleCarousel from '../components/carousel/carousel';
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
                   ]}
                   wrapper="span"
-                  speed={50}
+                  speed={400}
                   style={{ fontSize: '1.5em', display: 'inline-block',color:"#5aefe7" }}
                   repeat={Infinity} /></h1>
             <p>Join us for exciting discussions, events, and collaborative learning.</p>
@@ -48,6 +49,7 @@ const Home = () => {
           </div>
         </section>
         {/* Add more sections with images and text as needed */}
+        <SimpleCarousel />
       </main>
     </div>
   );
