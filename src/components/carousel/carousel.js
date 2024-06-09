@@ -17,7 +17,7 @@ const SimpleCarousel = () => {
   };
   return (
     <div className="carousel-container">
-        <h1>Events Highlights</h1>
+      <h1 style={{ color: "#5aefe7", paddingLeft: 20  }}>Highlights</h1>
       <Slider {...settings}>
         <div className="carousel-slide">
           <img src={img2} alt="Slide 1" />

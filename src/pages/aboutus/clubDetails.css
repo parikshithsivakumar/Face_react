@@ -1,0 +1,87 @@
+.about-page {
+  padding: 20px;
+  background-color: #101720;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 20px; /* Decreased margin-bottom */
+  padding-left: 1rem; /* Added padding-left */
+  padding-right: 1rem; /* Added padding-right */
+}
+
+.motive-section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0; /* Adjusted margin */
+  padding-left: 3rem; /* Added padding-left */
+  padding-right: 3rem;
+  margin-top: 20px; /* Decreased margin-top */
+}
+
+.motive-image {
+  flex: 1;
+  padding-right: 10px; /* Decreased padding-right */
+  margin-right: 2rem; /* Added margin-right */
+  margin-left: 2rem; /* Added margin-right */
+}
+
+.motive-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
+  animation: floatAnimation 3s ease-in-out infinite alternate; /* Added animation */
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.motive-text {
+  flex: 2;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px; /* Decreased margin-bottom */
+  color: #5aefe7;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #fcfcfc;
+  margin-bottom: 10px; /* Added margin-bottom for spacing between paragraphs */
+}
+
+@media only screen and (max-width: 768px) {
+  .about-page {
+    padding: 10px; /* Adjusted padding */
+  }
+
+  .about-section {
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    padding-left: 0.5rem; /* Adjusted padding-left */
+    padding-right: 0.5rem; /* Adjusted padding-right */
+  }
+
+  .motive-section {
+    flex-direction: column;
+    margin: 1rem 0; /* Adjusted margin */
+  }
+
+  .motive-image {
+    padding-right: 0;
+    height: 300px;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 10px; /* Decreased margin-bottom */
+  }
+}

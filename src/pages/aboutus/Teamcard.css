@@ -3,56 +3,77 @@
 .team-card {
   width: 100%;
   max-width: 300px;
-  height: 20em;
+  height: 20em; /* Initial height for minimal information */
   border: 1px solid #ddd;
   border-radius: 4px;
   margin: 16px;
   padding: 16px;
   text-align: center;
-  overflow: hidden; /* Ensure the description is initially hidden */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.back{
+.back {
   background-color: #101720;
 }
 
 .team-card:hover {
-  height: fit-content;
-  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
   transform: scale(1.1);
   box-shadow: 0 4px 8px #5aefe7;
+  height: 20em; /* Expanded height for full information */
 }
 
 .team-card-image {
   width: 100%;
-  max-height: 200px;
+  max-height: 70%; /* Smaller initial image height */
   object-fit: cover;
   border-radius: 4%;
+  transition: max-height 0.3s ease-in-out; /* Smooth transition for image size */
+}
+
+.team-card:hover .team-card-image {
+  max-height: 0px; /* Expanded image height */
 }
 
 .team-card-content {
-  margin-top: 16px;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out;
+  margin-top: 8px;
+  opacity: 1; /* Initially hidden */
+  max-height: auto; /* Collapse content initially */
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
 
 .team-card:hover .team-card-content {
   opacity: 1; /* Show on hover */
+  max-height: 200px; /* Expand content */
 }
 
 .team-card-name {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Smaller initial font size */
   font-weight: bold;
   color: #333;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font size */
+}
+
+.team-card:hover .team-card-name {
+  font-size: 1.4rem; /* Expanded font size */
 }
 
 .team-card-role {
   color: #777;
-  margin-top: 8px;
+  transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
+  padding-bottom :1rem;
+}
+
+.team-card:hover .team-card-role {
+  margin-top: 4px; /* Expanded margin */
 }
 
 .team-card-description {
-  margin-top: 8px;
+  margin-top: 4px; /* Smaller initial margin */
   color: #555;
+  transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
+}
+
+.team-card:hover .team-card-description {
+  margin-top: 8px; /* Expanded margin */
 }

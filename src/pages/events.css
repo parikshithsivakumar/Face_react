@@ -1,0 +1,110 @@
+.event-toggle-container {
+    padding: 20px;
+    background-color: #101720;
+    border-radius: 0px;
+    color: #ffffff;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .toggle-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #101720;
+    color: #5aefe7;
+    border: 2px solid #5aefe7;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toggle-button-container button.active {
+    background-color: #5aefe7;
+    color: #101720;
+  }
+  
+  .events-list {
+    margin-top: 20px;
+
+  }
+  
+  .event-card {
+    background-color: #5aefe7;
+
+    color: #101720;
+    width: 50%;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(90, 239, 231, 0.2), 0 12px 40px 0 rgba(90, 239, 231, 0.19);
+  }
+  
+  .event-card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-info {
+    flex: 1;
+  }
+  
+  .event-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event-image {
+    margin-left: 20px;
+  }
+  
+  .event-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
+  }
+  
+  .register-button, .read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #101720;
+    color: #5aefe7;
+    border: 2px solid #5aefe7;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .register-button:hover, .read-more-button:hover {
+    background-color: #5aefe7;
+    color: #101720;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .event-card-content {
+      flex-direction: column;
+    }
+  
+    .event-image {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,124 @@
+.calendar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+
+  background-color: #101720;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  background-color: #101720;
+  color: #ffffff;
+}
+
+.react-calendar__tile {
+  background-color: #101720;
+  color: #ffffff;
+}
+
+.react-calendar__tile--active {
+  background-color: #5aefe7 !important;
+  color: #101720 !important;
+}
+
+.react-calendar__tile--event-tile {
+  background-color: #f1c40f;
+  color: #101720;
+}
+
+.react-calendar__navigation {
+  background-color: #101720;
+  color: #ffffff;
+}
+
+.react-calendar__navigation button {
+  background-color: #101720;
+  color: #ffffff;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #5aefe7;
+  color: #101720;
+}
+
+.event-details-container {
+  margin-top: 20px;
+}
+
+.event-card {
+  background-color: #5aefe7;
+  color: #101720;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px 0 rgba(90, 239, 231, 0.2), 0 12px 40px 0 rgba(90, 239, 231, 0.19);
+}
+
+.event-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-image {
+  margin-left: 20px;
+}
+
+.event-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #101720;
+  color: #5aefe7;
+  border: 2px solid #5aefe7;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #5aefe7;
+  color: #101720;
+}
+
+@media only screen and (max-width: 768px) {
+  .calendar-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #101720;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .event-card-content {
+    flex-direction: column;
+  }
+
+  .event-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

@@ -39,19 +39,19 @@
   }
   
   .join-button {
-    background-color: #5aefe7;
-    color: #fff;
-    font-size: 1em;
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
+    background-color: #42e9e1;
+    color: #101720;
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .join-button:hover {
-    background-color: #4bcffa;
-    transform: scale(1.05);
+    background-color: #101720;
+    color: #5aefe7;
   }
   
   .hero-image img {

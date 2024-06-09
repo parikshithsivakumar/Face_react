@@ -36,21 +36,21 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Blog</NavLink>
+            <a href="https://amritaface.medium.com" target="_blank" rel="noopener noreferrer">Blog</a>
             </li>
 
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/events">Events</NavLink>
+              <NavLink to="/Events">Events</NavLink>
             </li>
-            <li >  
+            {/* <li >  
             <NavBtnLink type="button" to="/signup"> 
              Sign In
           </NavBtnLink>
            
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

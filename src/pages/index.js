@@ -7,6 +7,7 @@ import Tilt from "react-parallax-tilt";
 import { TypeAnimation } from 'react-type-animation';
 // import SilderCarousel from "../components/carousel/carousel";
 import SimpleCarousel from '../components/carousel/carousel';
+import EventCalendar from './calender.js';
 
 const Home = () => {
   return (
@@ -28,7 +29,9 @@ const Home = () => {
                   style={{ fontSize: '1.5em', display: 'inline-block',color:"#5aefe7" }}
                   repeat={Infinity} /></h1>
             <p>Join us for exciting discussions, events, and collaborative learning.</p>
-            <button className="join-button">Join Now</button>
+            <a href="https://chat.whatsapp.com/CBePP2Q2moR4PuQUQqyxVB" className="join-button">Join Us on Whatsapp 
+            </a>
+            {/* <button className="join-button"></button> */}
           </div>
           <div className="hero-image">
             {/* <img src={image} alt="Hero Image" height={400} width={400} style={{boxShadow: "0px 1px 3.36px 0.14px rgba(0, 0, 0, 0.14)"}}/> */}
@@ -50,6 +53,7 @@ const Home = () => {
         </section>
         {/* Add more sections with images and text as needed */}
         <SimpleCarousel />
+        <EventCalendar />
       </main>
     </div>
   );
