@@ -86,25 +86,28 @@
     background-color: #1e1e1e; /* Dark background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    /* overflow: hidden;  */
+    overflow: hidden; 
     /* padding-bottom: 40% ; */
   }
 
 
 
   .slide-content {
-    top: 100%;
+      top: 50%;
       max-width: 40%;
       height: auto;
       font-size: 8px;
+      background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+      backdrop-filter: blur(2px);
+
   }
 
   .slide-content h2 {
-      font-size: 11px;
+      font-size: 14px;
   }
 
   .slide-content p {
-      font-size: 8px;
+      font-size: 11px;
   }
 
   .carousel-heading {

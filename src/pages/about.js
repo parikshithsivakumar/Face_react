@@ -1,6 +1,6 @@
 // pages/about.js
 import React from "react";
-import TeamCard from "./aboutus/TeamCard.js";
+import TeamCard from "./aboutus/Teamcard.js";
 import Aboutclub from "./aboutus/aboutclub.js";
 import Contactus from "./aboutus/contactus.js";
 import img1 from "../static/imgs/hero-img.jpg";
