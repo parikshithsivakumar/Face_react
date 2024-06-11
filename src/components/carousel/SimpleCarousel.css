@@ -6,6 +6,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   /* overflow: hidden;  */
   /* padding: 20px 0; Add padding for the heading */
+  padding-top: 2px;
 }
 
 .carousel-heading {

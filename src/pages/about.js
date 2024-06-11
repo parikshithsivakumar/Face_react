@@ -70,13 +70,11 @@ const AboutUsPage = () => {
       role: "Vice President",
       skills: [
         "Machine Learning",
-        "SQL",
-        "Mongodb",
+        "SQL,Mongodb",
         "Natural Language Processing",
-        "Django",
-        "Web Development",
+        "Django,WebDev",
       ],
-      email: "suryamritha.manoj@gmail.com",
+      email:"suryamritha.manoj@gmail.com",
       phonenumber: "+91 9445560262",
       imageUrl: Suryamithra_Image, // Replace with actual image URL
       socials: [

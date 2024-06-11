@@ -3,7 +3,8 @@
 .team-card {
   width: 100%;
   max-width: 300px;
-  height: 30em; /* Initial height for minimal information */
+  height: 20em; /* Initial height for minimal information */
+  max-height: 600px;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin: 16px;
@@ -21,7 +22,7 @@
 .team-card:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px #5aefe7;
-  height: 20em; /* Expanded height for full information */
+  height: 23em; /* Expanded height for full information */
 }
 
 .team-card-image {
@@ -77,6 +78,7 @@
 
 .team-card:hover .team-card-description {
   margin-top: 8px; /* Expanded margin */
+  padding-bottom: 16px;
 }
 
 .team-card-social {
