@@ -40,10 +40,11 @@
     background-color: #5aefe7;
 
     color: #101720;
-    width: 50%;
+    width: 95%;
     border-radius: 8px;
-    padding: 15px;
+    padding: 1rem;
     margin-bottom: 15px;
+    margin-right: 1rem;
     box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2), 0 6px 20px 0 rgba(90, 239, 231, 0.19);
     transition: transform 0.2s, box-shadow 0.2s;
   }
