@@ -3,84 +3,102 @@ import React from "react";
 import TeamCard from "./aboutus/TeamCard.js";
 import Aboutclub from "./aboutus/aboutclub.js";
 import Contactus from "./aboutus/contactus.js";
-import img1 from "../static/imgs/hero-img.jpg";
+import president_Image from "../static/imgs/president_of_FACE.png";
+import mentor_Image from "../static/imgs/mentor.png";
+import Rohan_Image from "../static/imgs/Vice_presi_of_FACE.jpg";
+import Anisha_Image from "../static/imgs/Treasurer.png";
+import Suryamithra_Image from "../static/imgs/vice_president_of_FACE.jpg";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 
 const AboutUsPage = () => {
   const teamMembers = [
     {
       name: "Anirudh",
       role: "President",
-      researchInterests: [
-        "Image Processing",
+      skills: [
+        "Data Science",
         "Machine Learning",
         "Deep Learning",
-        "Remote Sensing",
-        "Computer Vision",
-        "Virtual Reality",
-        "Artificial Reality",
+        "Computer vision",
+        "Natural Language Processing",
+        "Computational Intelligence",
       ],
-      email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: "https://placekitten.com/300/300", // Replace with actual image URL
+      phonenumber: "+91 6364151707",
+      email: "anirudh8124@gmail.com",
+      imageUrl: president_Image, // Replace with actual image URL
       socials: [
-        { icon: "fab fa-twitter", link: "#" },
-        { icon: "fab fa-linkedin", link: "#" },
+        {
+          icon: FaInstagram,
+          link: "https://www.instagram.com/anirudh__8_/",
+        },
+        {
+          icon: FaTwitter,
+          link: "https://www.linkedin.com/in/anirudh-s-46115124a/",
+        },
         // Add more social icons as needed
       ],
     },
     {
       name: "Rohan Gamidi",
       role: "Vice President",
-      researchInterests: [
-        "Image Processing",
+      skills: [
+        "Data Science",
         "Machine Learning",
         "Deep Learning",
-        "Remote Sensing",
         "Computer Vision",
-        "Virtual Reality",
-        "Artificial Reality",
+        "Natural Language Processing",
+        "Internet of Things",
       ],
-      email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: img1, // Replace with actual image URL
+      email: "rohangamidi1999@gmail.com",
+      phonenumber: "+91 7022496433",
+      imageUrl: Rohan_Image, // Replace with actual image URL
       socials: [
-        { icon: "fab fa-twitter", link: "#" },
-        { icon: "fab fa-linkedin", link: "#" },
+        {
+          icon: "fab fa-instagram",
+          link: "https://www.instagram.com/mysterious_jelly/",
+        },
+        {
+          icon: "fab fa-linkedin",
+          link: "http://www.linkedin.com/in/rohan-gamidi-1060a6248",
+        },
+        { icon: "fab fa-github", link: "https://github.com/gamidirohan" },
         // Add more social icons as needed
       ],
     },
     {
       name: "Suryamithra",
       role: "Vice President",
-      researchInterests: [
-        "Image Processing",
+      skills: [
         "Machine Learning",
-        "Deep Learning",
-        "Remote Sensing",
-        "Computer Vision",
-        "Virtual Reality",
-        "Artificial Reality",
+        "SQL",
+        "Mongodb",
+        "Natural Language Processing",
+        "Django",
+        "Web Development",
       ],
-      email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: "#", // Replace with actual image URL
+      email: "suryamritha.manoj@gmail.com",
+      phonenumber: "+91 9445560262",
+      imageUrl: Suryamithra_Image, // Replace with actual image URL
       socials: [
-        { icon: "fab fa-twitter", link: "#" },
-        { icon: "fab fa-linkedin", link: "#" },
+        {
+          icon: "fab fa-instagram",
+          link: "https://www.instagram.com/suryamritha_.531/",
+        },
+        {
+          icon: "fab fa-linkedin",
+          link: "http://www.linkedin.com/in/suryamritham",
+        },
+        { icon: "fab fa-github", link: "https://github.com/suryamritha" },
         // Add more social icons as needed
       ],
     },
     {
       name: "Anisha Reddy",
       role: "Treasurer",
-      researchInterests: [
-        "Image Processing",
-        "Machine Learning",
-        "Deep Learning",
-        "Remote Sensing",
-        "Computer Vision",
-        "Virtual Reality",
-        "Artificial Reality",
-      ],
-      email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: "https://placekitten.com/301/301", // Replace with actual image URL
+      skills: ["Data Science", "Machine Learning", "Full Stack Development"],
+      email: "anishareddy0409@gmail.com",
+      phonenumber: "+91 9535459046",
+      imageUrl: Anisha_Image, // Replace with actual image URL
       socials: [
         { icon: "fab fa-twitter", link: "#" },
         { icon: "fab fa-linkedin", link: "#" },
@@ -100,7 +118,7 @@ const AboutUsPage = () => {
         "Artificial Reality",
       ],
       email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: "https://placekitten.com/301/301", // Replace with actual image URL
+      imageUrl: mentor_Image, // Replace with actual image URL
       socials: [
         { icon: "fab fa-twitter", link: "#" },
         { icon: "fab fa-linkedin", link: "#" },
