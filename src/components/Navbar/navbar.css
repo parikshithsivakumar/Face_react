@@ -61,6 +61,7 @@ body {
   list-style-type: none;
 }
 
+
 .nav-elements ul li:not(:last-child) {
   margin-right: 60px;
 }
@@ -133,4 +134,23 @@ color: #f3f3f3;
     .nav-elements ul li a{
       color: #fcfcfc;
       }
+  }
+
+
+
+  .nav-elements ul a {
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;  /* Added transition for animation */
+  }
+  
+  .nav-elements ul a:hover {
+    color: #5aefe7;
+    transform: scale(1.1);  /* Added scale transform for animation */
   }

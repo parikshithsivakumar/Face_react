@@ -8,6 +8,8 @@ import { TypeAnimation } from 'react-type-animation';
 // import SilderCarousel from "../components/carousel/carousel";
 import SimpleCarousel from '../components/carousel/carousel';
 import EventCalendar from './calender.js';
+import { NavLink } from "../components/Navbar/NavbarElements.js";
+import {BtnLink} from "../pages/aboutus/learnmore.js"
 
 const Home = () => {
   return (
@@ -48,7 +50,9 @@ const Home = () => {
             <h2 style={{ color: "#5aefe7", paddingLeft:20  }}>About Us</h2>
             <p>
               The Computer Science forum at Amrita School of Engineering, Bengaluru which strives to bring the best out of every student comprising of CSI Amrita Bengaluru, ACM Amrita Bengaluru, ACM-W Amrita Bengaluru and Codechef Amrita Bengaluru. Together, these groups create a well-rounded and holistic environment for computer science students. The forum offers a range of activities and opportunities, including technical talks by experts, coding competitions, hackathons, and networking events. It also acts as a bridge between students and industry professionals, helping them gain exposure to real-world challenges and trends in the field. By bringing together these organizations, the Computer Science forum at Amrita School of Engineering in Bengaluru strives to provide its members with a comprehensive educational experience, empowering them to excel in their academic pursuits and prepare for successful careers in the world of technology.
+              <BtnLink to="/about">Learn more</BtnLink>
             </p>
+           
           </div>
         </section>
         {/* Add more sections with images and text as needed */}
