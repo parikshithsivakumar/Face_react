@@ -62,6 +62,7 @@ const Home = () => {
               empowering them to excel in their academic pursuits and prepare
               for successful careers in the world of technology.
             </p>
+           
           </div>
         </section>
         <SimpleCarousel />
