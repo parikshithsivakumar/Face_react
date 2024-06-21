@@ -1,73 +1,113 @@
 /* MainPage.css */
 
 .main-page-container {
-    font-family: 'Arial', sans-serif;
-    background-color: #101720;
-    max-width: 100%;
-  }
-  
-  main {
-    max-width: 100%;
-    margin: 0 auto;
-    color: #fcfcfc;
-  }
-  
-  .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 60vh;
-    background-size:100%; /* Adjust the height as needed */
-    background-image: url('/src/static/imgs/cyberbg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-  }
-  
-  .hero-content {
-    flex: 1;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .join-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #42e9e1;
-    color: #101720;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .join-button:hover {
-    background-color: #101720;
-    color: #5aefe7;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    padding-right: 3rem;
-    margin-right: 3rem;
-  }
-  
+  font-family: "Arial", sans-serif;
+  background-color: #101720;
+  max-width: 100%;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  color: #fcfcfc;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #42e9e1;
+  color: #101720;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #101720;
+  color: #5aefe7;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding-right: 3rem;
+  margin-right: 3rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20px;
+}
+
+.about-content {
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 20px;
+  justify-content: safe;
+  align-items: center;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  width: 20rem;
+  border-radius: 40%;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  z-index: -5;
+}
+
+.about-image {
+  box-shadow: 0px 4px 40px 8px #000;
+  border-radius: 40%;
+}
+
+@media only screen and (max-width: 768px) {
   .about-section {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 20px;
+    flex-direction: column;
   }
 
+<<<<<<< HEAD
   .about-content {
     /* color: #5aefe7; */
     padding: 20px;
@@ -88,41 +128,19 @@
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     box-sizing: border-box;
+=======
+  .about-image img {
+    width: 100%;
+>>>>>>> 93d8a8427ffe25cc51951440696f9833fe54d97c
     height: auto;
-    vertical-align: bottom;
-    z-index: -5;
   }
-  
-  .about-image {
-    /* background-image: url("/src/static/imgs/new_hero.png"); */
-    box-shadow: 0px 4px 40px 8px #000;
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    /* box-sizing: border-box; */
-  }
+}
 
-  @media only screen and (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-    }
-  
-    .about-image img {
-      width: 100%; /* Make the image take the full width */
-      height: auto; /* Maintain the aspect ratio */
-    }
-  }
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-
-  .about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-section p {
-    font-size: 1.1rem;
-  }
-  
-  /* Add more styling for additional sections as needed */
-  
+.about-section p {
+  font-size: 1.1rem;
+}

@@ -1,43 +1,36 @@
 // components/Navbar/index.js
 
-import React,{ useState } from "react";
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink,
-  NavLogo,
-} from "./NavbarElements";
-import { Link } from "react-router-dom"; 
+import React, { useState } from "react";
+import { NavLink, Bars } from "./NavbarElements";
+import { Link } from "react-router-dom";
 import logo from "./images/face-logo-final-removebg-preview.png";
-import './navbar.css'
+import "./navbar.css";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
+    setShowNavbar(!showNavbar);
+  };
 
   return (
     <nav className="navbar">
       <div className="container">
         <div className="logo">
+<<<<<<< HEAD
            
            <NavLink to="/"><img src={logo} alt="logo"></img></NavLink>
+=======
+          <img src={logo} alt="logo"></img>
+>>>>>>> 93d8a8427ffe25cc51951440696f9833fe54d97c
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Bars />
         </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-            <a href="https://amritaface.medium.com" target="_blank" rel="noopener noreferrer">Blog</a>
             </li>
 
             <li>
@@ -45,6 +38,15 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to="/Events">Events</NavLink>
+            </li>
+            <li>
+              <a
+                href="https://amritaface.medium.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
             </li>
             {/* <li >  
             <NavBtnLink type="button" to="/signup"> 
@@ -56,7 +58,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
