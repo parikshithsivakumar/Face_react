@@ -4,6 +4,7 @@ import image from "../static/imgs/hero-img.jpg";
 import { TypeAnimation } from "react-type-animation";
 import bg_video from "../static/imgs/bg_video.mp4";
 import SimpleCarousel from "../components/carousel/carousel";
+import { BtnLink } from "./aboutus/learnmore.js";
 
 const Home = () => {
   return (
@@ -61,6 +62,8 @@ const Home = () => {
               its members with a comprehensive educational experience,
               empowering them to excel in their academic pursuits and prepare
               for successful careers in the world of technology.
+
+              <BtnLink to="/about">Learn more</BtnLink>
             </p>
            
           </div>

@@ -17,12 +17,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-<<<<<<< HEAD
            
            <NavLink to="/"><img src={logo} alt="logo"></img></NavLink>
-=======
-          <img src={logo} alt="logo"></img>
->>>>>>> 93d8a8427ffe25cc51951440696f9833fe54d97c
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Bars />

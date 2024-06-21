@@ -107,7 +107,6 @@ main {
     flex-direction: column;
   }
 
-<<<<<<< HEAD
   .about-content {
     /* color: #5aefe7; */
     padding: 20px;
@@ -128,10 +127,6 @@ main {
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     box-sizing: border-box;
-=======
-  .about-image img {
-    width: 100%;
->>>>>>> 93d8a8427ffe25cc51951440696f9833fe54d97c
     height: auto;
   }
 }
