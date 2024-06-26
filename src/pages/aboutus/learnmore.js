@@ -12,14 +12,14 @@ export const BtnLink = styled(Link)`
   width: fit-content;
   height: 100%;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;  /* Added transition */
-  
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition */
+
   &.active {
     color: #5aefe7;
   }
 
   &:hover {
     color: #5aefe7;
-    transform: scale(1.1);  /* Added scale transform for animation */
+    transform: scale(1.1); /* Added scale transform for animation */
   }
 `;
