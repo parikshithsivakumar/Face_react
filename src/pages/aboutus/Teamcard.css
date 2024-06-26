@@ -2,9 +2,9 @@
 
 .team-card {
   width: 100%;
-  max-width: 15vw;
+  max-width: 18vw;
   height: 30rem; /* Initial height for minimal information */
-  max-height: 25rem;
+  max-height: 45vh;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin: 16px;
@@ -103,4 +103,21 @@
 
 .team-card-social a:hover {
   color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .team-card {
+    width: 100%;
+    max-width: 20rem;
+    height: 30rem; /* Initial height for minimal information */
+    max-height: 25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 16px;
+    padding: 16px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+      height 0.3s ease-in-out;
+  }
 }
