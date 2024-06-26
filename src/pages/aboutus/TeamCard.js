@@ -13,7 +13,8 @@ const TeamCard = ({
 }) => {
   return (
     <div className="team-card">
-      <div className="team-card-image-container"><img src={imageUrl} alt={name} className="team-card-image" />
+      <div className="team-card-image-container">
+        <img src={imageUrl} alt={name} className="team-card-image" />
       </div>
       <div className="team-card-content">
         <h3 className="team-card-name">{name}</h3>
