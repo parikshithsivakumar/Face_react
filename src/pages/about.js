@@ -1,6 +1,6 @@
 // pages/about.js
 import React from "react";
-import TeamCard from "./aboutus/Teamcard.js";
+import TeamCard from "./aboutus/TeamCard.js";
 import Aboutclub from "./aboutus/aboutclub.js";
 import Contactus from "./aboutus/contactus.js";
 import president_Image from "../static/imgs/president_of_FACE.png";
@@ -69,12 +69,12 @@ const AboutUsPage = () => {
       name: "Dr. Nidhin Prabhakar T.V.",
       role: "Mentor",
       researchInterests: [
-        "Image Processing",
-        "Machine Learning",
-        "Deep Learning",
-        "Remote Sensing",
-        "Computer Vision",
-        "Virtual Reality",
+        "Image Processing ,",
+        "Machine Learning ,",
+        "Deep Learning ,",
+        "Remote Sensing ,",
+        "Computer Vision ,",
+        "Virtual Reality ,",
         "Artificial Reality",
       ],
       email: "tv_nidhin@blr.amrita.edu",

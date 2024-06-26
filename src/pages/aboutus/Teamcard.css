@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 15vw;
   height: 30rem; /* Initial height for minimal information */
-  max-height: 25rem;
+  max-height: 45vh;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin: 16px;
@@ -57,35 +57,39 @@
 }
 
 .team-card-name {
-  font-size: 1.3rem; /* Smaller initial font size */
+  font-size: 1vw; /* Smaller initial font size */
   font-weight: bold;
   color: #ddd;
   transition: font-size 0.3s ease-in-out; /* Smooth transition for font size */
 }
 
 .team-card:hover .team-card-name {
-  font-size: 1.4rem; /* Expanded font size */
+  font-size: 1.1vw; /* Expanded font size */
 }
 
 .team-card-role {
   color: #ddd;
   transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
   padding-bottom: 1rem;
+  font-size: 1vw;
 }
 
 .team-card:hover .team-card-role {
   margin-top: 4px; /* Expanded margin */
+  font-size: 1.1vw;
 }
 
 .team-card-description {
   margin-top: 4px; /* Smaller initial margin */
   color: #ddd;
   transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
+  
 }
 
 .team-card:hover .team-card-description {
   margin-top: 8px; /* Expanded margin */
   padding-bottom: 16px;
+  font-size: 0.9vw;
 }
 
 .team-card-social {
