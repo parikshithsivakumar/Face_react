@@ -20,6 +20,10 @@ main {
   min-height: 60vh;
   padding: 80px 20px;
   overflow: hidden;
+  background-image: url("../static/imgs/cyberbg.jpg");
+  background-size: 100%; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
 }
 
 .background-video {
@@ -36,14 +40,14 @@ main {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-left: 875px;
-  padding-bottom: 100px;
+  /* padding-left: 875px;
+  padding-bottom: 100px; */
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  text-align: right;
+  text-align: center;
 }
 
 .hero-content p {
