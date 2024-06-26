@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import bg_video from "../static/imgs/bg_video_2.mp4";
 import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
+import { ScrollRestoration } from "react-router-dom";
 
 
 const Home = () => {
@@ -43,7 +44,7 @@ const Home = () => {
 
         <section className="about-section">
           <div className="about-image">
-            <img src={image} alt="About Image" />
+            <img src={image} alt="About " />
           </div>
           <div className="about-content">
             <h2 style={{ color: "#5aefe7", paddingLeft: 20 }}>About Us</h2>
@@ -63,7 +64,9 @@ const Home = () => {
               its members with a comprehensive educational experience,
               empowering them to excel in their academic pursuits and prepare
               for successful careers in the world of technology.
-              <BtnLink to="/about">Learn more</BtnLink>
+              <BtnLink to="/about" onClick={<ScrollRestoration />}>
+                Learn more
+              </BtnLink>
             </p>
           </div>
         </section>
