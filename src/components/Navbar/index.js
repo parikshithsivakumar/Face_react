@@ -20,10 +20,6 @@ const Navbar = () => {
           <NavLink to="/">
             <img src={logo} alt="logo"></img>
           </NavLink>
-
-          <NavLink to="/">
-            <img src={logo} alt="logo"></img>
-          </NavLink>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Bars />
