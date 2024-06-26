@@ -20,10 +20,14 @@ body {
   height: 100%;
 }
 
+.container a:hover {
+  color: #5aefe7;
+  transform: scale(1.1); /* Added scale transform for animation */
+}
 .navbar {
   height: 60px;
   /* background-color: #1D1919; */
-  background-color: #0d1717;
+  background-color: #000000;
   position: relative;
 }
 
