@@ -7,6 +7,7 @@ import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
 import { ScrollRestoration } from "react-router-dom";
 
+
 const Home = () => {
   return (
     <div>
