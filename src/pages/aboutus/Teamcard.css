@@ -83,13 +83,12 @@
   margin-top: 4px; /* Smaller initial margin */
   color: #ddd;
   transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
-  
 }
 
 .team-card:hover .team-card-description {
   margin-top: 8px; /* Expanded margin */
   padding-bottom: 16px;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 
 .team-card-social {
@@ -123,5 +122,37 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
       height 0.3s ease-in-out;
+  }
+  .team-card-name {
+    font-size: 18px; /* Smaller initial font size */
+    font-weight: bold;
+    color: #ddd;
+    transition: font-size 0.3s ease-in-out; /* Smooth transition for font size */
+  }
+  .team-card:hover .team-card-name {
+    font-size: 18px; /* Expanded font size */
+  }
+  .team-card-role {
+    color: #ddd;
+    transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
+    padding-bottom: 1rem;
+    font-size: 14px;
+  }
+  .team-card:hover .team-card-role {
+    margin-top: 4px; /* Expanded margin */
+    font-size: 14px;
+  }
+
+  .team-card-description {
+    margin-top: 4px; /* Smaller initial margin */
+    color: #ddd;
+    transition: margin-top 0.3s ease-in-out; /* Smooth transition for margin */
+  }
+
+  .team-card:hover .team-card-description {
+    margin-top: 8px; /* Expanded margin */
+    padding-bottom: 16px;
+    font-size: 0.9vw;
+    font-size: 12px;
   }
 }

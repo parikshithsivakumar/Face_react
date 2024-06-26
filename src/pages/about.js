@@ -66,26 +66,6 @@ const AboutUsPage = () => {
       ],
     },
     {
-      name: "Dr. Nidhin Prabhakar T.V.",
-      role: "Mentor",
-      researchInterests: [
-        "Image Processing ,",
-        "Machine Learning ,",
-        "Deep Learning ,",
-        "Remote Sensing ,",
-        "Computer Vision ,",
-        "Virtual Reality ,",
-        "Artificial Reality",
-      ],
-      email: "tv_nidhin@blr.amrita.edu",
-      imageUrl: mentor_Image, // Replace with actual image URL
-      socials: [
-        { icon: "fab fa-twitter", link: "#" },
-        { icon: "fab fa-linkedin", link: "#" },
-        // Add more social icons as needed
-      ],
-    },
-    {
       name: "Suryamithra",
       role: "Vice President",
       skills: [
@@ -118,6 +98,26 @@ const AboutUsPage = () => {
       email: "anishareddy0409@gmail.com",
       phonenumber: "+91 9535459046",
       imageUrl: Anisha_Image, // Replace with actual image URL
+      socials: [
+        { icon: "fab fa-twitter", link: "#" },
+        { icon: "fab fa-linkedin", link: "#" },
+        // Add more social icons as needed
+      ],
+    },
+    {
+      name: "Dr. Nidhin Prabhakar T.V.",
+      role: "Mentor",
+      researchInterests: [
+        "Image Processing ,",
+        "Machine Learning ,",
+        "Deep Learning ,",
+        "Remote Sensing ,",
+        "Computer Vision ,",
+        "Virtual Reality ,",
+        "Artificial Reality",
+      ],
+      email: "tv_nidhin@blr.amrita.edu",
+      imageUrl: mentor_Image, // Replace with actual image URL
       socials: [
         { icon: "fab fa-twitter", link: "#" },
         { icon: "fab fa-linkedin", link: "#" },
