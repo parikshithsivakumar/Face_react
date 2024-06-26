@@ -36,6 +36,7 @@ main {
   position: relative;
   z-index: 1;
   text-align: center;
+  justify-content: center;
   padding-left: 875px;
   padding-bottom: 100px;
 }
@@ -43,7 +44,7 @@ main {
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .hero-content p {

@@ -6,6 +6,7 @@ import bg_video from "../static/imgs/bg_video.mp4";
 import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
 
+
 const Home = () => {
   return (
     <div>

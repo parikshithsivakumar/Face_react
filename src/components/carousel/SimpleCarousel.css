@@ -1,12 +1,14 @@
 .carousel-container {
   width: 80%;
   margin: auto;
-  background-color: #1e1e1e; /* Dark background */
+  /* background-color: #1e1e1e;  */
+  padding: 1rem;
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
   /* overflow: hidden;  */
   /* padding: 20px 0; Add padding for the heading */
-  padding-top: 2px;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .carousel-heading {
@@ -18,19 +20,22 @@
 
 .carousel-slide {
   position: relative;
+  border-radius: 4%;
 
 }
 
 .carousel-slide img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
   filter: brightness(0.7); /* Darken the image */
   transition: filter 0.3s ease; /* Smooth transition on hover */
+  border-radius: 10px;
 }
 
 .carousel-slide:hover img {
   filter: brightness(1); /* Brighten the image on hover */
+  border-radius: 10px;
 }
 
 .slide-content {
@@ -41,16 +46,17 @@
   text-align: center;
   color: #fff;
   width: 50%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /* background: rgba(0, 0, 0, 0.5);  */
   padding: 20px;
+  padding-bottom: 3rem;
   border-radius: 10px;
-  backdrop-filter: blur(10px); /* Blur the background */
+  /* backdrop-filter: blur(10px);  */
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .carousel-slide:hover .slide-content {
-  background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
-  backdrop-filter: blur(15px); /* More blur on hover */
+  /* background: rgba(0, 0, 0, 0.7); Darker background on hover */
+  /* backdrop-filter: blur(15px); */
 }
 
 .slide-content h2 {
@@ -80,17 +86,16 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   .carousel-container {
     width: 90%;
     margin: auto;
-    background-color: #1e1e1e; /* Dark background */
+    padding: 16px;
+    /* background-color: #1e1e1e; Dark background */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    overflow: hidden; 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Subtle shadow */
+    overflow: hidden;
     /* padding-bottom: 40% ; */
   }
-
 
 
   .slide-content {
@@ -98,8 +103,8 @@
       max-width: 40%;
       height: auto;
       font-size: 8px;
-      background: rgba(0, 0, 0, 0); /* Semi-transparent background */
-      backdrop-filter: blur(2px);
+      /* background: rgba(0, 0, 0, 0); Semi-transparent background */
+      /* backdrop-filter: blur(2px); */
 
   }
 
