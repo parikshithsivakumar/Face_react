@@ -131,9 +131,11 @@ const AboutUsPage = () => {
   return (
     <div className="back">
       <Aboutclub />
-      <h1 style={{ fontSize: "2rem", margin: "4rem", color: "#5aefe7" }}>
-        Meet Our Executive Team
-      </h1>
+      <center>
+        <h1 style={{ fontSize: "3rem", margin: "4rem", color: "#5aefe7" }}>
+          Meet Our Mentor And OBs
+        </h1>
+      </center>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >

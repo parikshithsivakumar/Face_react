@@ -1,12 +1,13 @@
-// pages/events.js
-
 import React, { useState, useEffect } from "react";
 import EventCalendar from "./calender"; // Import your existing EventCalendar component
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./events.css"; // Create a CSS file for styling
 
 const EventToggle = () => {
   const [view, setView] = useState("all");
   const [filteredEvents, setFilteredEvents] = useState([]);
+  const [pastEvents, setPastEvents] = useState([]);
 
   const events = [
     {
@@ -29,7 +30,7 @@ const EventToggle = () => {
     },
     {
       title: "Event 3",
-      date: "2024-06-25",
+      date: "2024-07-03",
       description: "Brief details about Event 3.",
       venue: "Venue 3",
       time: "04:00 PM",
@@ -44,7 +45,9 @@ const EventToggle = () => {
     if (view === "upcoming") {
       setFilteredEvents(events.filter((event) => event.date >= currentDate));
     } else {
-      setFilteredEvents(events.filter((event) => event.date <= currentDate));
+      const past = events.filter((event) => event.date < currentDate);
+      setPastEvents(past.slice(-5)); // Get the recent 5 past events
+      setFilteredEvents(past);
     }
   }, [view]);
 
@@ -65,36 +68,54 @@ const EventToggle = () => {
         </button>
       </div>
       <div className="events-list">
-        {filteredEvents.map((event, index) => (
-          <div className="event-card" key={index}>
-            <div className="event-card-content">
-              <div className="event-info">
-                <h3>{event.title}</h3>
-                <p>{event.description}</p>
-                <p>
-                  <strong>Venue:</strong> {event.venue}
-                </p>
-                <p>
-                  <strong>Time:</strong> {event.time}
-                </p>
-                <div className="event-buttons">
-                  <a
-                    href={event.registrationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="register-button"
-                  >
-                    Register Here
-                  </a>
-                  <button className="read-more-button">Read More</button>
+        {view === "upcoming" ? (
+          filteredEvents.map((event, index) => (
+            <div className="event-card" key={index}>
+              <div className="event-card-content">
+                <div className="event-info">
+                  <h3>{event.title}</h3>
+                  <p>{event.description}</p>
+                  <p>
+                    <strong>Venue:</strong> {event.venue}
+                  </p>
+                  <p>
+                    <strong>Time:</strong> {event.time}
+                  </p>
+                  <div className="event-buttons">
+                    <a
+                      href={event.registrationLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="register-button"
+                    >
+                      Register Here
+                    </a>
+                    <button className="read-more-button">Read More</button>
+                  </div>
+                </div>
+                <div className="event-image">
+                  <img src={event.image} alt={event.title} />
                 </div>
               </div>
-              <div className="event-image">
-                <img src={event.image} alt={event.title} />
-              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <Carousel showThumbs={false} autoPlay infiniteLoop>
+            {pastEvents.map((event, index) => (
+              <div className="carousel-item" key={index}>
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="carousel-image"
+                />
+                <div className="carousel-caption">
+                  <h3>{event.title}</h3>
+                  <p>{event.description}</p>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        )}
       </div>
     </div>
   );

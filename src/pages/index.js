@@ -7,7 +7,6 @@ import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
 import { ScrollRestoration } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <div>
@@ -47,7 +46,9 @@ const Home = () => {
             <img src={image} alt="About " />
           </div>
           <div className="about-content">
-            <h2 style={{ color: "#5aefe7", paddingLeft: 20 }}>About Us</h2>
+            <h2 style={{ color: "#5aefe7", paddingLeft: 10, fontSize: 27 }}>
+              About Us
+            </h2>
             <p>
               The Computer Science forum at Amrita School of Engineering,
               Bengaluru which strives to bring the best out of every student
