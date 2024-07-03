@@ -17,9 +17,9 @@
 }
 
 .contact-container {
-  max-width: 50%;
+  max-width: 90%;
   margin-left: 2rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
   margin-top: 4rem;
 }
 
@@ -37,6 +37,7 @@
 }
 
 .contact-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -47,20 +48,36 @@
   margin-bottom: 15px;
 }
 
+.form-field1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-field1 label,
 .form-field label {
   margin-bottom: 5px;
   font-size: 1.1rem;
   color: #fcfcfc;
+  justify-content: space-between;
 }
 
-input, textarea {
-  padding: 10px;
+input,
+textarea {
+  width: 80%;
+  padding: 10px 15px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   transition: border-color 0.3s;
 }
 
-input:hover, input:focus, textarea:hover, textarea:focus {
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
   border-color: #5aefe7;
 }
 
@@ -98,9 +115,8 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 
 /* Map styles */
 .map-container {
-  width: 50%;
+  width: 100%;
   height: 300px;
-  /* margin-top: 8rem; */
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -114,7 +130,10 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     width: 40%;
     position: relative;
     top: 8rem;
-
+  }
+  input,
+  textarea {
+    width: 80%;
   }
   .contact-wrapper {
     flex-direction: row;
@@ -132,10 +151,17 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     border: 1px solid #ddd;
     border-radius: 10px;
   }
+  input,
+  textarea {
+    width: 80%;
+  }
   .contact-wrapper {
     flex-direction: column;
   }
   .contact-info {
     margin-bottom: 40px;
+  }
+  .form-field1 {
+    flex-direction: column;
   }
 }
