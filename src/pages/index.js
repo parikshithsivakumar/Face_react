@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import image from "../static/imgs/hero-img.jpg";
 import { TypeAnimation } from "react-type-animation";
-import bg_video from "../static/imgs/bg_video_2.mp4";
+import bg_video from "../static/imgs/homebgm.mp4";
 import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
 import { ScrollRestoration } from "react-router-dom";
@@ -13,9 +13,9 @@ const Home = () => {
       <header>{/* Your header content */}</header>
       <main className="main-page-container">
         <section className="hero-section">
-          {/* <video autoPlay loop muted playsInline className="background-video">
+          <video autoPlay loop muted playsInline className="background-video">
             <source src={bg_video} type="video/mp4" />
-          </video> */}
+          </video>
           <div className="hero-content">
             <h1>
               Welcome to the{" "}
