@@ -15,18 +15,18 @@ const ContactUs = () => {
         </div>
         <form className="contact-form">
           <div className="form-field1">
-            <div  className="form-field">
+            <div  className="form-field1">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" />
             </div>
-            <div  className="form-field">
+            <div  className="form-field1">
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" />
             </div>
           </div>
           <div className="form-field">
             <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" rows="4"  />
+            <textarea id="message" name="message" rows="3"  />
           </div>
           <button type="submit" className="submit-button">Send Message</button>
         </form>

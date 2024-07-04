@@ -19,6 +19,7 @@ const TeamCard = ({
       <div className="team-card-content">
         <h3 className="team-card-name">{name}</h3>
         <p className="team-card-role">{role}</p>
+        <div className="team-card-init">
         {researchInterests && (
           <p className="team-card-description">
             <b>Research Interests:</b> {researchInterests}
@@ -50,6 +51,7 @@ const TeamCard = ({
               <i className={social.icon}></i>
             </a>
           ))}
+        </div>
         </div>
       </div>
     </div>

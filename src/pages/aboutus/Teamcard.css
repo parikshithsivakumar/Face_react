@@ -17,9 +17,9 @@
 
 .team-card-image-container {
   width: 100%;
-  height: 75%;
+  height: 80%;
   overflow: hidden;
-  max-height: 75%;
+  max-height: 85%;
 }
 
 .back {
@@ -50,10 +50,16 @@
   max-height: auto; /* Collapse content initially */
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
+.team-card-init {
+  margin-top: 8px;
+  opacity: 0; /* Initially hidden */
+  max-height: auto; /* Collapse content initially */
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
 
-.team-card:hover .team-card-content {
-  /* opacity: 1;  */
-  /* max-height: 200px; */
+.team-card:hover .team-card-init {
+  opacity: 1;  
+  /* max-height: 200px;*/
 }
 
 .team-card-name {
