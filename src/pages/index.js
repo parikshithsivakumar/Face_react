@@ -6,6 +6,7 @@ import bg_video from "../static/imgs/homebgm.mp4";
 import SimpleCarousel from "../components/carousel/carousel";
 import { BtnLink } from "./aboutus/learnmore.js";
 import { ScrollRestoration } from "react-router-dom";
+import Contactus from "./aboutus/contactus.js";
 
 const Home = () => {
   return (
@@ -72,6 +73,7 @@ const Home = () => {
           </div>
         </section>
         <SimpleCarousel />
+        <Contactus />
       </main>
     </div>
   );
