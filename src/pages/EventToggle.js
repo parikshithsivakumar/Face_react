@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import EventCalendar from "./calender"; // Import your existing EventCalendar component
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./events.css"; // Create a CSS file for styling
@@ -36,6 +35,15 @@ const EventToggle = () => {
       venue: "Venue 3",
       time: "04:00 PM",
       registrationLink: "https://example.com/register/event3",
+      image: "https://via.placeholder.com/150", // Add the URL of the event image
+    },
+    {
+      title: "Event 4",
+      date: "2024-08-08",
+      description: "Brief details about Event 4.",
+      venue: "Venue 4",
+      time: "04:00 PM",
+      registrationLink: "https://example.com/register/event4",
       image: "https://via.placeholder.com/150", // Add the URL of the event image
     },
     // Add more events here
