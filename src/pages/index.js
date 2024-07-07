@@ -13,9 +13,11 @@ const Home = () => {
       <header>{/* Your header content */}</header>
       <main className="main-page-container">
         <section className="hero-section">
+          
           <video autoPlay loop muted playsInline className="background-video">
             <source src={bg_video} type="video/mp4" />
           </video>
+          
           <div className="hero-content">
             <h1>
               Welcome to the{" "}
