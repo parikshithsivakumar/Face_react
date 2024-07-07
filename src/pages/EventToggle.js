@@ -21,7 +21,7 @@ const EventToggle = () => {
     },
     {
       title: "Event 2",
-      date: "2024-08-26",
+      date: "2024-03-26",
       description: "Brief details about Event 2.",
       venue: "Venue 2",
       time: "02:00 PM",
@@ -30,8 +30,9 @@ const EventToggle = () => {
     },
     {
       title: "Event 3",
-      date: "2024-0-03",
-      description: "Brief details about Event 3.A workshop on react happened where our alumini from 24/7ai company came as speakers of the workshop",
+      date: "2024-02-03",
+      description:
+        "Brief details about Event 3.A workshop on react happened where our alumini from 24/7ai company came as speakers of the workshop",
       venue: "Venue 3",
       time: "04:00 PM",
       registrationLink: "https://example.com/register/event3",
