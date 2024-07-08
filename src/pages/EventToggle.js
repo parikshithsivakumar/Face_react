@@ -82,13 +82,17 @@ const EventToggle = () => {
             <div className="event-card" key={index}>
               <div className="event-card-content">
                 <div className="event-info">
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
-                  <p>
-                    <strong>Venue:</strong> {event.venue}
+                  <h3 style={{ fontSize: "2rem" }}>{event.title}</h3>
+                  <p style={{ fontWeight: "bolder", fontSize: "1.5rem" }}>
+                    {event.description}
                   </p>
                   <p>
-                    <strong>Time:</strong> {event.time}
+                    <strong style={{ fontSize: "1.5rem" }}>Venue:</strong>{" "}
+                    {event.venue}
+                  </p>
+                  <p>
+                    <strong style={{ fontSize: "1.5rem" }}>Time:</strong>{" "}
+                    {event.time}
                   </p>
                   <div className="event-buttons">
                     <a
@@ -118,8 +122,10 @@ const EventToggle = () => {
                   className="carousel-image"
                 />
                 <div className="carousel-caption">
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
+                  <h3 style={{ fontSize: "2rem" }}>{event.title}</h3>
+                  <p style={{ fontWeight: "bolder", fontSize: "1.5rem" }}>
+                    {event.description}
+                  </p>
                 </div>
               </div>
             ))}
