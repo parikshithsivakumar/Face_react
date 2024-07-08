@@ -99,7 +99,6 @@ const Chatbot = () => {
     const farewells = ['bye', 'goodbye', 'see you'];
     const thanks = ['thank you', 'thanks'];
     const events = ['events', 'registrations', 'registration', 'event'];
-    const events = ['events', 'registrations', 'registration', 'event'];
     const contact = ['contact', 'us'];
     const blogs = ['blogs', 'blog', 'read'];
     const about = ['about', 'about us', 'about face' , 'face'];
