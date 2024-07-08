@@ -10,7 +10,7 @@ const CSV_FILE_PATH = path.join(__dirname, 'qa_data.csv'); //Add your CSV file w
 const FEEDBACK_FILE_PATH = path.join(__dirname, 'feedback.txt'); //Make a feedback.txt file in the server directory to store the converstations and feedback from the user... It helps in better understanding of what users are questiong and if chatbot is replying back upto their expectations...
 
 //Serve the CSV file...
-app.get('/qa_data.csv', (req, res) => {
+app.get('/api/qa_data', (req, res) => {
   res.sendFile(CSV_FILE_PATH);
 });
 
@@ -45,5 +45,11 @@ app.get('/api/feedback', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+app.use(express.static(path.join(__dirname, '../build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
