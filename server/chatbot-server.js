@@ -6,15 +6,15 @@ const Papa = require('papaparse');
 const app = express();
 app.use(express.json());
 
-const CSV_FILE_PATH = path.join(__dirname, 'qa_data.csv');
-const FEEDBACK_FILE_PATH = path.join(__dirname, 'feedback.txt');
+const CSV_FILE_PATH = path.join(__dirname, 'qa_data.csv'); //Add your CSV file with first column as questions (all in lower case) and second column as answers corresponding to its first column cell's question...
+const FEEDBACK_FILE_PATH = path.join(__dirname, 'feedback.txt'); //Make a feedback.txt file in the server directory to store the converstations and feedback from the user... It helps in better understanding of what users are questiong and if chatbot is replying back upto their expectations...
 
-//Serve the CSV file
+//Serve the CSV file...
 app.get('/qa_data.csv', (req, res) => {
   res.sendFile(CSV_FILE_PATH);
 });
 
-//Handle feedback
+//Handle feedback...
 app.post('/api/feedback', async (req, res) => {
   try {
     const { timestamp, question, feedback } = req.body;
