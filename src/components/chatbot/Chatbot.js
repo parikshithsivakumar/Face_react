@@ -98,10 +98,10 @@ const Chatbot = () => {
     const greetings = ['hi', 'hello', 'hey'];
     const farewells = ['bye', 'goodbye', 'see you'];
     const thanks = ['thank you', 'thanks'];
-    const events = ['face', 'events', 'registrations', 'registration', 'event'];
+    const events = ['events', 'registrations', 'registration', 'event'];
     const contact = ['contact', 'us'];
     const blogs = ['blogs', 'blog', 'read'];
-    const about = ['about', 'about us', 'about face'];
+    const about = ['about', 'about us', 'about face' , 'face'];
 
     msg = msg.toLowerCase();
 
