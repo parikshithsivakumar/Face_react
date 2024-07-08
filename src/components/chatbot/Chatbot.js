@@ -3,6 +3,8 @@ import Papa from 'papaparse';
 import Fuse from 'fuse.js';
 import './Chatbot.css';
 
+const API_URL = 'https://your-backend-api-url.com'; //Replace with your actual backend URL...
+
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -18,7 +20,7 @@ const Chatbot = () => {
 
   const loadQAData = async () => {
     try {
-      const response = await fetch('/api/qa_data');
+      const response = await fetch(`${API_URL}/api/qa_data`);
       const csvString = await response.text();
       const results = Papa.parse(csvString, { header: false, skipEmptyLines: true });
       
@@ -162,7 +164,7 @@ const Chatbot = () => {
     };
 
     try {
-      const response = await fetch('/api/feedback', {
+      const response = await fetch(`${API_URL}/api/feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
