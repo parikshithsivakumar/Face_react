@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import Fuse from 'fuse.js';
 import './Chatbot.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000'; //Change the URL according to the server url
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000'; // Change the URL according to the server url
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,19 +23,19 @@ const Chatbot = () => {
       const response = await fetch(`${API_URL}/api/qa_data`);
       const csvString = await response.text();
       const results = Papa.parse(csvString, { header: false, skipEmptyLines: true });
-      
+
       const data = {};
       results.data.forEach(([question, answer]) => {
         if (question && answer) {
           data[question.toLowerCase()] = answer;
         }
       });
-      
+
       setQaData(data);
-      addBotMessage("Hello! How can I assist you today?");
+      addBotMessage("Hi! How may I assist you today?");
     } catch (error) {
       console.error('Error loading CSV file:', error);
-      addBotMessage("I'm having trouble accessing my knowledge base. Please try again later.");
+      addBotMessage("Hi! How may I assist you today?");
     }
   };
 
@@ -99,6 +99,7 @@ const Chatbot = () => {
     const farewells = ['bye', 'goodbye', 'see you'];
     const thanks = ['thank you', 'thanks'];
     const events = ['events', 'registrations', 'registration', 'event'];
+    const events = ['events', 'registrations', 'registration', 'event'];
     const contact = ['contact', 'us'];
     const blogs = ['blogs', 'blog', 'read'];
     const about = ['about', 'about us', 'about face' , 'face'];
@@ -142,16 +143,13 @@ const Chatbot = () => {
         addBotMessage("Please Go to our About page to read more about FACE and our Achievements!");
         break;
       default:
-        if (!fuse) return;
+        if (!fuse) {
+          addBotMessage("I'm sorry, I won't be able to answer that. Please contact us for more information!");
+          return;
+        }
 
         const results = fuse.search(msg);
-        if (results.length > 1 && results[0].score < 0.3 && results[1].score < 0.4) {
-          addBotMessage("I found a few possible answers. Which one are you interested in?");
-          results.slice(0, 3).forEach((result, index) => {
-            addBotMessage(`${index + 1}. ${result.item.question}`);
-          });
-          setContext('multiple_choice');
-        } else if (results.length > 0) {
+        if (results.length > 0) {
           const answer = results[0].item.answer;
           addBotMessage(answer);
           setContext(results[0].item.question);
@@ -160,11 +158,11 @@ const Chatbot = () => {
           if (contextResults.length > 0) {
             addBotMessage(contextResults[0].item.answer);
           } else {
-            addBotMessage("I can't answer that. Please contact us at our Contact Us page.");
+            addBotMessage("I'm sorry, I won't be able to answer that. Please contact us for more information!");
             setContext(null);
           }
         } else {
-          addBotMessage("I can't answer that. Please contact us at our Contact Us page.");
+          addBotMessage("I'm sorry, I won't be able to answer that. Please contact us for more information!");
         }
     }
   };
