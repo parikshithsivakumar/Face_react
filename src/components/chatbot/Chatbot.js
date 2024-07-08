@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import Fuse from 'fuse.js';
 import './Chatbot.css';
 
-const API_URL = 'https://your-backend-api-url.com'; //Replace with your actual backend URL...
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000'; //Change the URL according to the server url
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
