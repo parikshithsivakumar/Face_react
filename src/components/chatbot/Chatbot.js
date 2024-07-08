@@ -98,12 +98,20 @@ const Chatbot = () => {
     const greetings = ['hi', 'hello', 'hey'];
     const farewells = ['bye', 'goodbye', 'see you'];
     const thanks = ['thank you', 'thanks'];
+    const events = ['face', 'events', 'registrations', 'registration', 'event'];
+    const contact = ['contact', 'us'];
+    const blogs = ['blogs', 'blog', 'read'];
+    const about = ['about', 'about us', 'about face'];
 
     msg = msg.toLowerCase();
 
     if (greetings.some(g => msg.includes(g))) return 'greeting';
     if (farewells.some(f => msg.includes(f))) return 'farewell';
     if (thanks.some(t => msg.includes(t))) return 'thanks';
+    if (events.some(e => msg.includes(e))) return 'events';
+    if (contact.some(c => msg.includes(c))) return 'contact';
+    if (blogs.some(b => msg.includes(b))) return 'blogs';
+    if (about.some(a => msg.includes(a))) return 'about';
 
     return 'question';
   };
@@ -120,6 +128,18 @@ const Chatbot = () => {
         break;
       case 'thanks':
         addBotMessage("You're welcome! Is there anything else I can help you with?");
+        break;
+      case 'events':
+        addBotMessage("Please go to the Events page for Registration.");
+        break;
+      case 'contact':
+        addBotMessage("Please go to Contact Us Page to know more.");
+        break;
+      case 'blogs':
+        addBotMessage("Please go to our Blog page to read more about our Technical Knowledgeable Blogs!");
+        break;
+      case 'about':
+        addBotMessage("Please Go to our About page to read more about FACE and our Achievements!");
         break;
       default:
         if (!fuse) return;
@@ -140,11 +160,11 @@ const Chatbot = () => {
           if (contextResults.length > 0) {
             addBotMessage(contextResults[0].item.answer);
           } else {
-            addBotMessage("I'm sorry, I don't have an answer for that question. Please try asking something else.");
+            addBotMessage("I can't answer that. Please contact us at our Contact Us page.");
             setContext(null);
           }
         } else {
-          addBotMessage("I'm sorry, I don't have an answer for that question. Please try asking something else.");
+          addBotMessage("I can't answer that. Please contact us at our Contact Us page.");
         }
     }
   };
