@@ -1,7 +1,10 @@
 import React from "react";
+import { useForm, ValidationError } from '@formspree/react';
 import "./Contactus.css";
 
 const ContactUs = () => {
+  const [state, handleSubmit] = useForm("mkgwnaqz");
+
   return (
     <div className="contact-wrapper">
       <div className="contact-container">
@@ -15,25 +18,39 @@ const ContactUs = () => {
           <p>Email: faceclub@example.com</p>
           <p>Phone No.: 1234567890</p>
         </div>
-        <form className="contact-form">
-          <div className="form-field1">
+        {state.succeeded ? (
+          <p>Thanks for your message! We'll get back to you soon.</p>
+        ) : (
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-field1">
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" />
+              <div className="form-field1">
+                <label htmlFor="name">Name:</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div className="form-field1">
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
+                />
+              </div>
             </div>
-            <div className="form-field1">
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" />
+            <div className="form-field">
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" rows="3" />
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+              />
             </div>
-          </div>
-          <div className="form-field">
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" rows="3" />
-          </div>
-          <button type="submit" className="submit-button">
-            Send Message
-          </button>
-        </form>
+            <button type="submit" className="submit-button" disabled={state.submitting}>
+              Send Message
+            </button>
+          </form>
+        )}
         <div className="social-icons">
           <a href="#" className="social-icon">
             <i className="fab fa-instagram"></i>
