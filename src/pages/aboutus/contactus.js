@@ -15,8 +15,8 @@ const ContactUs = () => {
             involved with FACE Club, feel free to reach out to us. We are always
             open to new ideas and collaborations.
           </p>
-          <p>Email: faceclub@example.com</p>
-          <p>Phone No.: 1234567890</p>
+          <p>Email: FaceASEB@gmail.com</p>
+          <p>Phone No.: (+91) 63641-51707</p>
         </div>
         {state.succeeded ? (
           <p>Thanks for your message! We'll get back to you soon.</p>

@@ -11,10 +11,10 @@ const EventToggle = () => {
   const events = [
     {
       title: "Event 1",
-      date: "2024-08-05",
+      date: "2023-11-20",
       description: "Brief details about Event 1.",
-      venue: "Venue 1",
-      time: "10:00 AM",
+      venue: "Amrita School of Engineering in Bengaluru ",
+      time: "November 21, 2023, to November 26, 2023",
       registrationLink: "https://example.com/register/event1",
       image: "https://via.placeholder.com/150", // Add the URL of the event image
     },

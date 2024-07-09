@@ -69,7 +69,9 @@ const Home = () => {
               empowering them to excel in their academic pursuits and prepare
               for successful careers in the world of technology.
               <BtnLink to="/about" onClick={<ScrollRestoration />}>
-                Learn more
+              <p style={{padding: 0,margin: 0 }}>
+              Learn more
+              </p>
               </BtnLink>
             </p>
           </div>

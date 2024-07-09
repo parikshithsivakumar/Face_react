@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>FACE</title>
+    <style>
+  body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a; /* Dark background color */
+            margin: 0;
+            perspective: 1000px;
+        }
+        .title {
+            font-size: 48px; /* Larger font size */
+            color: #302e30; /* Purple color */
+            text-align: center;
+            background: linear-gradient(to right, #9a9191, #aa6161); /* Gradient background with contrasting colors */
+            background-clip: text; /* Clip background to text */
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent; /* Hide actual text */
+            animation: titleGlow 5s infinite alternate; /* Add a glowing animation */
+            margin-top: 20px;
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            margin: 20px;
+        
+        }
+
+        .card {
+            width: 450px;
+            height: 450px;
+            background: linear-gradient(to bottom right, #1f2023, #3a3a3a); /* Gradient background */
+            padding: 70px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Darker box shadow */
+            transform-style: preserve-3d;
+            animation: hologram 7s infinite alternate, lighting 7s infinite alternate;
+            margin: 10px;
+        }
+
+        .card-inner {
+            padding: 20px;
+            color: #fff; /* White text color */
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #d2d2d2; /* Blue header text color */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+
+        .icon-group {
+            display: flex; /* Make the icons inside the group flex items */
+            justify-content: center; /* Center the icons horizontally within the group */
+            margin-top: 10px; /* Add some top margin between the icons and the content below */
+            align-items: space-around;
+            padding:2px
+        }
+
+        .icon-group a {
+            margin: 0 10px; /* Add spacing between the icons */
+            font-size: 24px; /* Adjust the icon size */
+            color: #007bff; /* Icon color (you can change this to your preferred color) */
+            text-decoration: none; /* Remove underlines from the icon links */
+            transition: color 0.3s; /* Smooth transition for icon color on hover */
+        }
+
+        .icon-group a:hover {
+            color: #0056b3; /* Change icon color on hover */
+        }
+
+        @keyframes hologram {
+            0% {
+                transform: translateY(-10px) rotateY(-20deg);
+            }
+            100% {
+                transform: translateY(10px) rotateY(20deg);
+            }
+        }
+
+        @keyframes lighting {
+            0% {
+                background: linear-gradient(to bottom right, #1f2023, #3a3a3a);
+            }
+            50% {
+                background: linear-gradient(to bottom right, #232427, #434343);
+            }
+            100% {
+                background: linear-gradient(to bottom right, #1f2023, #3a3a3a);
+            }
+        }
+
+        a:link {
+            color: rgb(8, 178, 194);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(8, 160, 16);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+        @media screen and (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Align content to the top for smaller screens */
+    }
+
+    .title {
+        font-size: 36px; /* Reduce font size for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Make cards full width on smaller screens */
+        padding: 30px; /* Reduce card padding on smaller screens */
+        margin: 10px 0;
+    }
+
+    .card-inner {
+        padding: 10px; /* Reduce inner card padding on smaller screens */
+    }
+
+    .card-row {
+        flex-direction: column; /* Display cards in a single column on smaller screens */
+    }
+
+    /* You can further adjust styles as needed for smaller screens */
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="title" style="font-family: 'Merriweather', serif;">CONTRIBUTORS</h1>
+
+    <!-- Second row of cards -->
+    <div class="card-row row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-header">
+                    <h1>KALLEPALLI RAHUL VARMA</h1>
+                </div>
+                <div class="card-body">
+                    <label for="name4">AMRITA EAC 3RD YEAR</label>
+                    <label for="email4">rahulvarmakallepalli@gmail.com</label>
+                    <div class = "icon-group">
+                    <a href="https://www.linkedin.com/in/rahul-varma-kallepalli-1a0535215" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Rahulvarma25-84" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-header">
+                    <h1>ROHIT S NAIR</h1>
+                </div>
+                <div class="card-body">
+                    <label for="name5">AMRITA EAC 3RD YEAR</label>
+                    <label for="email5">rohitsnair2004@gmail.com</label>
+                    <div class = "icon-group">
+                    <a href="https://www.linkedin.com/in/rohitsnair2004/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rohitsnair7272" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-row row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+            <!-- Card 1 -->
+            <div class="card" ">
+                <div class="card-inner">
+                    <div class="card-header">
+                        <h1>Manaswini</h1>
+                    </div>
+                    <div class="card-body">
+                        <label for="name1">AMRITA CSE 4th YEAR</label>
+                        <label for="email1"></label>
+                        <div class="icon-group">
+                            <a href="http://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-header">
+                    <h1>JETTY SOWMITH</h1>
+                </div>
+                <div class="card-body">
+                    <label for="name6">AMRITA AIE 4th YEAR</label>
+                    <label for="email6">medha@gmail.com</label>
+                    <div class="icon-group">
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

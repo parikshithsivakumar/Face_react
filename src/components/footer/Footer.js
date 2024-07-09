@@ -7,9 +7,10 @@ import {
   Row,
   Column,
   FooterLink,
+  FooterLink1,
   Heading,
 } from "./FooterStyles";
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,25 +28,26 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Campus</FooterLink>
-            <FooterLink href="#">Blogs</FooterLink>
+            <FooterLink href="/about">Vision</FooterLink> {/* Corrected Link */}
+            <FooterLink href="https://www.amrita.edu/campus/bengaluru/">Campus</FooterLink> {/* Corrected Link */}
+            <FooterLink href="https://amritaface.medium.com/" target="_blank">Blogs</FooterLink>
           </Column>
           <Column>
             <Heading>Events</Heading>
-            <FooterLink href="#">Current events</FooterLink>
-            <FooterLink href="#">All events</FooterLink>
+            <FooterLink href="/events">Current events</FooterLink> {/* Corrected Link */}
+            <FooterLink href="/events">All events</FooterLink> {/* Corrected Link */}
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#">Email</FooterLink>
-            <FooterLink href="#">Phone</FooterLink>
-            <FooterLink href="#">Socials</FooterLink>
+            <FooterLink href="mailto:FaceASEB@gmail.com">
+              FaceASEB@gmail.com
+            </FooterLink>
+            <FooterLink1>Ph: +91 63641-51707</FooterLink1>
+            <FooterLink href="./contributors.html" target="_blank">Contributors</FooterLink> {/* Corrected Link */}
           </Column>
           <Column>
             <Heading>Social Media</Heading>
-            <FooterLink href="#">
+            <FooterLink href="https://www.instagram.com/face_aseb/">
               <span
                 style={{
                   marginLeft: "10px",
@@ -54,7 +56,7 @@ const Footer = () => {
                 <FaInstagram />
               </span>
             </FooterLink>
-            <FooterLink href="#">
+            {/* <FooterLink href="#">
               <span
                 style={{
                   marginLeft: "10px",
@@ -62,14 +64,14 @@ const Footer = () => {
               >
                 <FaFacebook />
               </span>
-            </FooterLink>
-            <FooterLink href="#">
+            </FooterLink> */}
+            <FooterLink href="https://chat.whatsapp.com/CBePP2Q2moR4PuQUQqyxVB">
               <span
                 style={{
                   marginLeft: "10px",
                 }}
               >
-                <FaTwitter />
+                <FaWhatsapp />
               </span>
             </FooterLink>
           </Column>
@@ -78,4 +80,5 @@ const Footer = () => {
     </Box>
   );
 };
+
 export default Footer;

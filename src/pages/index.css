@@ -20,7 +20,7 @@ main {
   min-height: 60vh;
   padding: 80px 20px;
   overflow: hidden;
-  background-image: url("../static/imgs/cyberbg.jpg");
+  /* background-image: url("../static/imgs/cyberbg.jpg"); */
   background-size: 100%; /* Adjust the height as needed */
   background-size: cover;
   background-position: center;

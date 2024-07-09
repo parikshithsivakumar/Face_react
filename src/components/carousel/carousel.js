@@ -20,7 +20,7 @@ const SimpleCarousel = () => {
 
   return (
     <div className="carousel-container">
-      <h1 className="carousel-heading">Updates</h1>
+      <h1 className="carousel-heading">Latest Updates</h1>
       <Slider {...settings}>
         <div className="carousel-slide">
           <img src={img1} alt="Slide 1" />
