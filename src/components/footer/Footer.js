@@ -29,13 +29,20 @@ const Footer = () => {
           <Column>
             <Heading>About Us</Heading>
             <FooterLink href="/about">Vision</FooterLink> {/* Corrected Link */}
-            <FooterLink href="https://www.amrita.edu/campus/bengaluru/">Campus</FooterLink> {/* Corrected Link */}
-            <FooterLink href="https://amritaface.medium.com/" target="_blank">Blogs</FooterLink>
+            <FooterLink href="https://www.amrita.edu/campus/bengaluru/">
+              Campus
+            </FooterLink>{" "}
+            {/* Corrected Link */}
+            <FooterLink href="https://amritaface.medium.com/" target="_blank">
+              Blogs
+            </FooterLink>
           </Column>
           <Column>
             <Heading>Events</Heading>
-            <FooterLink href="/events">Current events</FooterLink> {/* Corrected Link */}
-            <FooterLink href="/events">All events</FooterLink> {/* Corrected Link */}
+            <FooterLink href="/events">Current events</FooterLink>{" "}
+            {/* Corrected Link */}
+            <FooterLink href="/events">All events</FooterLink>{" "}
+            {/* Corrected Link */}
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
@@ -43,7 +50,10 @@ const Footer = () => {
               FaceASEB@gmail.com
             </FooterLink>
             <FooterLink1>Ph: +91 63641-51707</FooterLink1>
-            <FooterLink href="./contributors.html" target="_blank">Contributors</FooterLink> {/* Corrected Link */}
+            <FooterLink href="./contributors.html" target="_blank">
+              Contributors
+            </FooterLink>{" "}
+            {/* Corrected Link */}
           </Column>
           <Column>
             <Heading>Social Media</Heading>

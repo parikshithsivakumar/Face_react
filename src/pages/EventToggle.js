@@ -20,7 +20,7 @@ const EventToggle = () => {
     },
     {
       title: "Event 2",
-      date: "2024-03-26",
+      date: "2024-08-26",
       description: "Brief details about Event 2.",
       venue: "Venue 2",
       time: "02:00 PM",
