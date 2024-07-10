@@ -8,7 +8,7 @@ export const Box = styled.div`
   font-family: "Poppins", "serif", Times New Roman, Times;
   bottom: 0;
   width: 95%;
-
+  // margin-top: 10vh;
   @media (max-width: 1000px) {
     // padding: 70px 30px;
   }
