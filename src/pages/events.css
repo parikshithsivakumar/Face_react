@@ -115,6 +115,7 @@
   color: #101720;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 768px) {
   .event-card-content {
     flex-direction: column;
@@ -134,6 +135,8 @@
     padding: 1rem;
   }
 }
+=======
+>>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 
 /* Carousel Styles */
 .carousel-item {
@@ -143,11 +146,12 @@
   border-radius: 8px;
   padding: 1rem;
   padding-bottom: 2rem;
+  height: 95vh;
 }
 
 .carousel-image {
-  width: 100%;
-  max-width: 98vw;
+  width: auto;
+  max-width: 75vw;
   height: auto;
   max-height: 65vh;
   border-radius: 8px;
@@ -157,14 +161,22 @@
 
 .carousel-caption {
   margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
+<<<<<<< HEAD
   /* background: #2e3032; */
   background: transparent;
   opacity: 50%;
   width: 3rem;
+=======
+  background: #2e3032;
+  /* background: ; */
+  opacity: 5%;
+  width:3rem ;
+>>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 }
 
 .carousel .carousel-status {
@@ -175,16 +187,22 @@
   font-size: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
   color: #fff;
-  opacity: 1;
+  opacity: 0;
 }
 
 .carousel .control-arrow:hover {
   opacity: 100%;
+<<<<<<< HEAD
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0)
   );
+=======
+  background: linear-gradient(to right,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0.2)), 
+>>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 }
 
 .carousel .control-arrow {
@@ -209,4 +227,29 @@
   box-shadow: 0 4px 8px 0 rgba(90, 239, 231, 0.2),
     0 6px 20px 0 rgba(90, 239, 231, 0.19);
   transition: none; /* No hover effect */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .event-card-content {
+    flex-direction: column;
+  }
+
+  .event-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .carousel-caption {
+    font-size: 14px;
+  }
+
+  .carousel-item {
+    max-height: 500px;
+    text-align: center;
+    color: #101720;
+    background-color: #5aefe7;
+    border-radius: 8px;
+    padding: 1rem;
+  }
 }
