@@ -11,6 +11,7 @@
   background-color: #f3e8ea;
   display: flex;
   flex-direction: column;
+  z-index: 99999;
 }
 .chatbot-header {
   background-color: #1c2a3b;
