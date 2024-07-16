@@ -115,28 +115,6 @@
   color: #101720;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 768px) {
-  .event-card-content {
-    flex-direction: column;
-  }
-
-  .event-image {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .carousel-item {
-    height: 500px;
-    text-align: center;
-    color: #101720;
-    background-color: #1763bf;
-    border-radius: 8px;
-    padding: 1rem;
-  }
-}
-=======
->>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 
 /* Carousel Styles */
 .carousel-item {
@@ -166,17 +144,10 @@
 
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
-<<<<<<< HEAD
-  /* background: #2e3032; */
-  background: transparent;
-  opacity: 50%;
-  width: 3rem;
-=======
   background: #2e3032;
   /* background: ; */
   opacity: 5%;
   width:3rem ;
->>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 }
 
 .carousel .carousel-status {
@@ -192,17 +163,9 @@
 
 .carousel .control-arrow:hover {
   opacity: 100%;
-<<<<<<< HEAD
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
-  );
-=======
   background: linear-gradient(to right,
   rgba(255, 255, 255, 0.8),
   rgba(255, 255, 255, 0.2)), 
->>>>>>> be9898744b8596d3d0cae3e31b979f0c9d51e638
 }
 
 .carousel .control-arrow {
